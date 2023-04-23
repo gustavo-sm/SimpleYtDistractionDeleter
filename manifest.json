@@ -1,0 +1,18 @@
+{
+
+  "manifest_version": 2,
+  "name": "Delete yt garbage distractions",
+  "version": "1.0",
+
+  "description": "Simple code that deletes possible distractions directly in DOM",
+
+  "content_scripts": [
+    {
+
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["index.js"]
+    }
+  ]
+
+}
+
