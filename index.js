@@ -14,18 +14,24 @@ function deleteUnwantedDivs(arr_remove = []) {
 
 
 function main() {
-
+	
 	if(window.location.pathname !=='/') {
 		setTimeout(function(){
+			document.querySelector("a#logo").onclick = function() {
+				window.location.href = '/'
+			};
 			deleteUnwantedDivs(['guide-inner-content']);
-		}, 1000);
+		}, 800);
 
 		return;
 	}
 
 	setTimeout(function() {
+		document.querySelector("a#logo").onclick = function() {
+			window.location.href = '/'
+		};
 		deleteUnwantedDivs(['guide', 'contents', 'chips-wrapper', 'primary']);
-	}, 1000);
+	}, 800);
 
 }
 
