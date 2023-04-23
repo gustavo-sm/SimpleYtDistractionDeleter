@@ -9,3 +9,13 @@ Bugs:
 To acertando o comportamento da extensão ainda. Quando estiver tudo ok eu refatoro os bad smells.
 
 Talvez, uma solução mais inteligente seria bloquear as chamadas que baixam os conteúdos da homepage, porém devo estudar mais como estão estruturadas as chamadas e seus respectivos conteúdos.
+
+Dependências:  
+web-ext ```7.6.1```
+
+Instruções para rodar:  
+```npm install -g```  
+```web-ext run``` para rodar em ambiente de testes do firefox;
+
+Build:  
+```web-ext build --overwrite-dest``` para fazer o build e gerar zip da extensão para ser subido no browser.
