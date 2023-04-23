@@ -1,12 +1,9 @@
-//xpinstall.signatures.required false
-
-
 setInterval(function(){
 	if(window.location.href !== sessionStorage.getItem('previous_url')) {
 		sessionStorage.setItem('previous_url', window.location.href);
 		main();
 	}
-}, 10); //pooling de 10ms pra checar se a url mudou (meio na gambiara mas funciona :P)
+}, 60); //pooling de 60ms pra checar se a url mudou (meio na gambiara mas funciona :P)
 
 
 function deleteUnwantedDivs(arr_remove = []) {
