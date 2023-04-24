@@ -18,7 +18,7 @@ function main() {
 	if(window.location.pathname !=='/') {
 		arr.push('guide-inner-content');
 		arr.push('related');
-		
+		arr.push('items');	
 	} else {
 		arr.push('guide');
 		arr.push('contents');
